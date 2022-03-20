@@ -8,7 +8,7 @@ while True:
     img, faces = detector.findFaceMesh(img)
     if faces:
         print(faces[0])
-    cv2.imshow("Image", img)
+    cv2.imshow("OBIOS Face Mesh", img)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 cap.release()
